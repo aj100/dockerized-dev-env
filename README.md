@@ -4,11 +4,11 @@
 ```
 docker build -t devbox .
 
-docker run -d --name devbox devbox
+docker run -d -p 3000:3000 --name devbox devbox
 
 docker exec -it devbox bash
 
-docker kill devbox; docker rm devbox
+docker stop devbox; docker rm devbox
 ```
 
 ### Dev Container Config
